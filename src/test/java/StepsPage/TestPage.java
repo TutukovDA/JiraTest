@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class TestPage {
     public static void countsTask() {
-        String countsTask = BaseGetText("span"," из").getText();
+        String countsTask = BaseGetText("span"," из").getText().substring(5);
         System.out.println("Общее количество заведенных задач в проекте: "+countsTask);
         $(By.name("searchString")).val("TestSelenium").pressEnter();
         Assertions.assertEquals("Искать",BaseButton("h1","@title","Искать").
