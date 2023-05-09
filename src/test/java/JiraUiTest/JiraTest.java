@@ -3,8 +3,6 @@ package JiraUiTest;
 import WebHooks.WebHooks;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-
 import static StepsPage.AuthPage.auth;
 import static StepsPage.ChangeStatusTask.changeStatusTask;
 import static StepsPage.MainPage.mainPage;
