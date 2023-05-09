@@ -25,7 +25,7 @@ public class TestCreateBag {
         BaseInput("input","@name","searchString").setValue(NAME_BUG).pressEnter();
         Assert.assertEquals(NAME_BUG,BaseGetText("*[@id='summary-val']",NAME_BUG).shouldBe(Condition.visible,Duration.ofSeconds(20)).getText());
         Assert.assertTrue(BaseButton("img","@title","Ошибка").shouldBe(Condition.visible,Duration.ofSeconds(20)).exists());
-        Assert.assertEquals("Version 2.0",BaseButton("span","@title","Version 2.0 ").shouldBe(Condition.visible,Duration.ofSeconds(20)).getText());
+        Assert.assertEquals("Version 2.0",BaseButton("span","@id","versions-val").shouldBe(Condition.visible,Duration.ofSeconds(20)).getText());
         Assert.assertNotNull(BaseInput("*","@id","description"));
     }
 }

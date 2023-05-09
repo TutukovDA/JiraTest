@@ -8,7 +8,7 @@ public class BaseElements {
         double x = Math.random();
         return x;
         }
-    public static final String NAME_BUG="Bug "+getRandomNumber();
+    public static final String NAME_BUG="Баг"+getRandomNumber();
     public static SelenideElement BaseInput(String tag,String atribute, String value) {
         return $x("//"+tag+"[" + atribute + "='" + value + "']");
     }

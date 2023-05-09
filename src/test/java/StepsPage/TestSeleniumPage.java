@@ -8,8 +8,8 @@ public class TestSeleniumPage {
         System.out.println("Задача имеет статус: "+BaseButton("span","@id","status-val").hover().getText());
     }
     public static void assertVersion(){
-        BaseButton("a","@title","Version 2.0 ").getText();
-        System.out.println("Задача имеет версию: "+ BaseButton("a","@title","Version 2.0 ").getText());
-        Assertions.assertEquals("Version 2.0",BaseButton("a","@title","Version 2.0 ").getText());
+        BaseButton("span","@id","versions-val").getText();
+        System.out.println("Задача имеет версию: "+ BaseButton("span","@id","versions-val").getText());
+        Assertions.assertEquals("Version 2.0",BaseButton("span","@id","versions-val").getText());
     }
 }
