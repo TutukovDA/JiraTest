@@ -22,7 +22,7 @@ public class JiraTest extends WebHooks {
         checkStatusTask();// Проверяем статус задачи и выводим его на экран
         assertVersion();// Поверяем соответствие версии задачи Version 2.0
         createBug();//Создаем новый БАГ с рандомным номером
-        changeStatusTask(); //Меняем статус созданного Бага СДЕЛАТЬ/В РАБОТЕ/ГОТОВО
+        changeStatusTask(); //Меняем статус созданного Бага СДЕЛАТЬ/В РАБОТЕ/ГОТОВО/
         System.out.println("Тест завершен");
     }
 }
