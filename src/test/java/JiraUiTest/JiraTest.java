@@ -16,13 +16,13 @@ public class JiraTest extends WebHooks {
     @DisplayName("Задание по Jira по 4 лекции")
     public void JTest() {
         open("https://edujira.ifellow.ru/secure/Dashboard.jspa");
-        auth();//Авторизация на сайте + проверка авторизации
-        mainPage();//Нажимаем на кнопку Проекты/Test (TEST) + проверка перехода на страницу Тесты
-        countsTask(); // ловим число задач в процессе и выводим на экран счетчик, обрезав первые 5 знаков + в строке поиска ищем "TestSelenium_bug"+ проверка перехода на страницу результатом поиска
-        checkStatusTask();// Проверяем статус задачи и выводим его на экран
-        assertVersion();// Поверяем соответствие версии задачи Version 2.0
-        createBug();//Создаем новый БАГ с рандомным номером
-        changeStatusTask(); //Меняем статус созданного Бага СДЕЛАТЬ/В РАБОТЕ/ГОТОВО/
+        auth();
+        mainPage();
+        countsTask();
+        checkStatusTask();
+        assertVersion();
+        createBug();
+        changeStatusTask();
         System.out.println("Тест завершен");
     }
 }
