@@ -24,7 +24,8 @@ public class TestCreateBag {
                 .click();
         BaseButton("textarea","@id","labels-textarea").sendKeys("tratat");
         BaseButton("textarea","@id","issuelinks-issues-textarea").setValue("TEST-21967").pressEnter();
-        //BaseGetText("option","Доска Спринт 2").setValue("Доска Спринт 2").pressEnter();
+        BaseInput("input","@id","customfield_10104-field").click();
+        BaseInput("input","@id","customfield_10104-field").setValue("Доска Спринт 2").pressEnter();
         BaseButton("*","@id","create-issue-submit").shouldBe(Condition.visible, Duration.ofSeconds(20))
                 .click();
         BaseInput("input","@name","searchString").setValue(NAME_BUG).pressEnter();
